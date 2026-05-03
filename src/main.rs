@@ -1,8 +1,8 @@
-mod tipos_bool_nums;
-use tipos_bool_nums::my_boolean;
+mod fluxos_ctrl;//declarando q name space vai usar
+use fluxos_ctrl::sentenca;//declara qual função vai usar do arquivo importado
 
 fn main() {
-    let mut num1_main: bool = true;
+    let mut result: i64 = sentenca(&mut 4, &mut 4);
 
-    println!("Tipos de nºs: {:?}!", my_boolean(&mut num1_main));
+    println!("É >= : {:?}!", result);
 }
